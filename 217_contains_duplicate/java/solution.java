@@ -17,6 +17,6 @@ class Solution {
         int[] nums = { 170, -368, 148, 672, 397, -629, -788, 192, 170, 309, -615, -237 };
 
         boolean result = containDuplicate(nums);
-        System.out.println(result);
+        System.out.println(result);       
     }
 }

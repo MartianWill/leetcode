@@ -1,3 +1,8 @@
 {
-  "java.project.sourcePaths": ["1_two_sum"]
+  "java.project.sourcePaths": [
+    "88_merge_sorted_array",
+    "350_intersection_two_arrays",
+    "1_two_sum",
+    "121_best_time_buy_and_sell"
+  ]
 }

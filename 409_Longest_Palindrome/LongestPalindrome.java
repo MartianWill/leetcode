@@ -1,7 +1,4 @@
 import java.util.HashMap;
-import java.util.Map;
-
-import javax.swing.border.MatteBorder;
 
 public class LongestPalindrome {
     public static int longestPalindrome(String s) {
@@ -31,10 +28,12 @@ public class LongestPalindrome {
                 longestLen += count;
             }
         }
-        if (hasOdd) {
+        // if there is an odd count, previous calc will add this number
+        // but 1 smaller. Need it back when it's placed in the middle.
+        if (hasOdd)
             return longestLen + 1;
-        }
-        return longestLen;
+        else
+            return longestLen;
     }
 
     public static void main(String[] args) {

@@ -11,4 +11,4 @@ If not `>0`, then it's not common ancestor.
 if `p.val < root.val` then `q.val <0` as well to have that `>0`. This also indicates p and q are both on left side of root. root should then go left to be bigger than q.
 
 O(h) time complexity, max time required equal to tree height.
-O(1) space complexity, no extra space required.
+O(1) space complexity, no extra space required. But apparently leetcode test cases used less memory with recursion method which takes O(h) (in comment).

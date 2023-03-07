@@ -5,11 +5,11 @@ Continuously following the `next`, a previous node will be reached again. tail's
 ## Approach
 
 `fast, slow` pointer. slow moves one/step, fast moves 2/step. Set fast back to head and moves 1/step.
-o-o
-/ \
-o-o-o o(meet)
-\ /
-o
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o-o
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\
+o-o-o &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o(meet)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o
 `x` distance from start to cycle pos, `2` in this case
 `y` distance form pos to xy meet, `3` in this case
 slow moves `x+y=5`, fast moves `2(x+y)=10`. True cuz fast moves twice faster.

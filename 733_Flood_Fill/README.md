@@ -10,7 +10,9 @@ To perform flood fill, consider the starting pixel + same color from 4-direction
 
 ## Approach
 
-Run a DFS and recursion.
+Run a DFS and recursion. Four directions are represented by 2\*4 array. Search all adjacent elements, if same color as staring pixel then renew that color.
+
+`NOTICE`, there might be a misunderstanding, at least I still don't get it. There is no need to change original array if the starting pixel has same color as new color. Even if the rest of array has different color.
 
 O(n) time complexity, visit each elements in array.
 O(n) space complexity, recursion takes extra space.
